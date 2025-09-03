@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FANCYKH - Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+<header>
+  <a href="index.html" class="logo"><i class="fas fa-gamepad"></i><span>FANCYKH</span></a>
+  <nav id="navMenu">
+    <ul>
+      <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="trending.html"><i class="fas fa-fire"></i> Trending</a></li>
+      <li><a href="gaming.html"><i class="fas fa-gamepad"></i> Gaming</a></li>
+      <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+      <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+  </nav>
+  <div class="user-actions">
+    <a href="upload.html" class="btn"><i class="fas fa-upload"></i> Upload</a>
+  </div>
+  <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
+</header>
+
+<!-- Banner -->
+<div class="container">
+  <div class="banner-container">
+    <a href="https://www.youtube.com/watch?v=5LtO8k5Rs6o" target="_blank" class="banner-link">
+      <div class="banner" style="background-image: url('assets/images/banner_overlay1.jpg');">
+        <div class="banner-overlay" style="background-image: url('assets/images/banner_overlay1.jpg');"></div> <!-- Only overlay, no <img> -->
+        <div class="banner-content">
+          <h1 id="bannerTitle">Epic Gaming Moments</h1>
+          <p id="bannerDescription">Share your best gaming clips with the world!</p>
+        </div>
+      </div>
+    </a>
+    <div class="banner-controls">
+      <div class="banner-btn active"></div>
+      <div class="banner-btn"></div>
+      <div class="banner-btn"></div>
+    </div>
+  </div>
+</div>
+
+    <h2 class="section-title"><i class="fas fa-star"></i> Featured Videos</h2>
+    <div class="video-grid" id="dynamicGrid"></div> <!-- uploads appear here -->
+    <div class="video-grid">
+      <div class="video-card"><img src="assets/images/thumb1.jpg"><h3>Best FPS Gameplay 2025</h3><p><i class="fas fa-user"></i> ProGamer</p></div>
+      <div class="video-card"><img src="assets/images/thumb2.jpg"><h3>Top 10 Boss Fights</h3><p><i class="fas fa-user"></i> GameHunter</p></div>
+      <div class="video-card"><img src="assets/images/thumb3.jpg"><h3>Speedrun World Record</h3><p><i class="fas fa-user"></i> SpeedMaster</p></div>
+      <div class="video-card"><img src="assets/images/thumb1.jpg"><h3>Ultimate Sniper Skills</h3><p><i class="fas fa-user"></i> SharpEye</p></div>
+      <div class="video-card"><img src="assets/images/thumb2.jpg"><h3>Funny Gaming Moments</h3><p><i class="fas fa-user"></i> LmaoPlays</p></div>
+      <div class="video-card"><img src="assets/images/thumb3.jpg"><h3>Horror Game Jumpscares</h3><p><i class="fas fa-user"></i> ScaryCat</p></div>
+      <div class="video-card"><img src="assets/images/thumb1.jpg"><h3>Esports Final Highlights</h3><p><i class="fas fa-user"></i> ProTeam</p></div>
+      <div class="video-card"><img src="assets/images/thumb2.jpg"><h3>Top Strategy Tips</h3><p><i class="fas fa-user"></i> StratMaster</p></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer><p>&copy; 2025 GameStream. All rights reserved.</p></footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

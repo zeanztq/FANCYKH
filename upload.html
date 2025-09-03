@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Video - GameStream</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo"><i class="fas fa-gamepad"></i><span>GameStream</span></a>
+    <nav id="navMenu">
+      <ul>
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="trending.html"><i class="fas fa-fire"></i> Trending</a></li>
+        <li><a href="gaming.html"><i class="fas fa-gamepad"></i> Gaming</a></li>
+        <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
+  </header>
+
+  <div class="container">
+    <h2 class="section-title"><i class="fas fa-upload"></i> Upload Video</h2>
+    <form id="uploadForm" class="contact-form">
+      <label for="youtubeUrl">YouTube URL:</label>
+      <input type="url" id="youtubeUrl" placeholder="Paste YouTube video link" required>
+      <button type="button" class="btn" id="fetchBtn"><i class="fas fa-magic"></i> Import Info</button>
+      <label for="title">Video Title:</label>
+      <input type="text" id="title" placeholder="Video title" required>
+      <label for="thumbnail">Video Thumbnail:</label>
+      <input type="text" id="thumbnail" placeholder="Thumbnail URL">
+      <img id="previewThumb" src="" style="max-width:200px; display:none; margin:10px 0;">
+      <label for="description">Video Description:</label>
+      <textarea id="description" rows="5" placeholder="Video description"></textarea>
+      <button type="submit" class="btn"><i class="fas fa-cloud-upload-alt"></i> Publish</button>
+    <form id="uploadForm" class="contact-form">
+    </form>
+
+    <div id="uploadMessage" style="margin-top:15px; font-weight:bold; color:limegreen; display:none;">
+    ✅ Video published! Check Home/Trending/Gaming pages.
+    </div>
+    </form>
+  </div>
+
+  <div class="container">
+  <div class="banner-container">
+    <a href="#" id="latestBannerLink">
+      <div class="banner" id="latestBanner">
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+          <h1 id="bannerTitle">Epic Gaming Moments</h1>
+          <p id="bannerDescription">Share your best gaming clips with the world!</p>
+        </div>
+      </div>
+    </a>
+    <div class="banner-controls">
+      <div class="banner-btn active"></div>
+      <div class="banner-btn"></div>
+      <div class="banner-btn"></div>
+    </div>
+  </div>
+</div>
+
+  <footer><p>&copy; 2025 GameStream</p></footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
